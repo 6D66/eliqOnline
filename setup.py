@@ -34,7 +34,10 @@ setup(
     download_url=get_download_url(version),
     install_requires=list(open("requirements.txt").read().strip().split()),
     keywords=["Eliq", "Eliq Online", "Eliq Online API"],
-    classifiers=[],
+    classifiers=[
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    ],
     scripts=["eliqonline"],
     py_modules=["eliqonline"],
     extras_require={"console": ["docopt"]},
